@@ -15,10 +15,10 @@ class CreateCondominiosTable extends Migration
     {
         Schema::create('condominios', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('cnpj');
             $table->string('nome');
-            $table->integer('cnpj');
             $table->string('endereco');
-            $table->integer('cep');
+            $table->string('cep');
             $table->string('cidade');
             $table->string('bairro');
             $table->string('uf');
